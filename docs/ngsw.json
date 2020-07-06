@@ -1,0 +1,84 @@
+{
+  "configVersion": 1,
+  "timestamp": 1594030526144,
+  "index": "/fayrix/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fayrix/4.58cece56f5c68ea2d44d.js",
+        "/fayrix/favicon.ico",
+        "/fayrix/index.html",
+        "/fayrix/main.40c0fb7f2242a097847c.js",
+        "/fayrix/manifest.webmanifest",
+        "/fayrix/polyfills.a4021de53358bb0fec14.js",
+        "/fayrix/runtime.de2a214160f914d4b8ca.js",
+        "/fayrix/styles.3997db369d61b6aadf16.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fayrix/assets/data.json",
+        "/fayrix/assets/icons/icon-128x128.png",
+        "/fayrix/assets/icons/icon-144x144.png",
+        "/fayrix/assets/icons/icon-152x152.png",
+        "/fayrix/assets/icons/icon-192x192.png",
+        "/fayrix/assets/icons/icon-384x384.png",
+        "/fayrix/assets/icons/icon-512x512.png",
+        "/fayrix/assets/icons/icon-72x72.png",
+        "/fayrix/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/fayrix/4.58cece56f5c68ea2d44d.js": "bdfe90af725bd0e0e9f0fe43b08ddd66d4cf2ed8",
+    "/fayrix/assets/data.json": "76ae8978c6a0bab944e87957273a6b291ba02cc2",
+    "/fayrix/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/fayrix/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/fayrix/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/fayrix/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/fayrix/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/fayrix/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/fayrix/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/fayrix/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/fayrix/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/fayrix/index.html": "0be05c43cf79e3e629e1eb8a3e84a0683adc621c",
+    "/fayrix/main.40c0fb7f2242a097847c.js": "88b02b352eb960783f8cf6698af178b0d3b901e3",
+    "/fayrix/manifest.webmanifest": "0bb97fead7eea6afa854ff8b8fe651082b2695f9",
+    "/fayrix/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/fayrix/runtime.de2a214160f914d4b8ca.js": "52f35824a0edd7e1dd703461e02f1110fe2a27c0",
+    "/fayrix/styles.3997db369d61b6aadf16.css": "e337b9de94026ecf1ba526e6042044532af5bb92"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

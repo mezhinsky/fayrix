@@ -1,0 +1,20 @@
+<app-cows-list-minimal
+  [items]="items$ | async"
+  [ids]="ids$ | async"
+  [loading]="loading$ | async"
+  [error]="error$ | async"
+  (action)="onAction($event)"
+></app-cows-list-minimal>
+
+
+<!-- это перенести в layout -->
+<div class="fab">
+	<button
+		(click)="add()"
+    mat-fab
+    color="primary"
+    aria-label="button with a add icon"
+  >
+    <mat-icon>note_add</mat-icon>
+  </button>
+</div>

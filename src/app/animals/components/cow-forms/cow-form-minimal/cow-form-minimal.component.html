@@ -1,0 +1,196 @@
+<form class="CowForm" [formGroup]="cowForm" (ngSubmit)="submit(cowForm)">
+  <div class="CowForm__content">
+    <div class="CowForm__block">
+      <mat-card class="CowForm__section Section">
+        <mat-card-header>
+          <mat-card-title>Идентификаторы</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="Section__content">
+          <mat-form-field appearance="outline">
+            <mat-label>ID коровы</mat-label>
+            <input
+              readonly
+              required
+              formControlName="cowId"
+              type="text"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>ID животного</mat-label>
+            <input
+              readonly
+              required
+              formControlName="animalId"
+              type="text"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>ID события</mat-label>
+            <input
+              readonly
+              required
+              formControlName="eventId"
+              type="text"
+              matInput
+            />
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="CowForm__section">
+        <mat-card-header>
+          <mat-card-title>Параметры</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="Section__content">
+          <section class="CowForm__checkbox">
+            <mat-checkbox formControlName="deletable" class="example-margin"
+              >Можно удалить</mat-checkbox
+            >
+          </section>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Возраст</mat-label>
+            <input
+              required
+              formControlName="ageInDays"
+              type="number"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Индекс здоровья</mat-label>
+            <input
+              required
+              formControlName="healthIndex"
+              type="number"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Пиковая темпиратура</mat-label>
+            <input
+              required
+              formControlName="heatIndexPeak"
+              type="number"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Тип</mat-label>
+            <select required matNativeControl formControlName="type">
+              <option label="-- выбирите --"></option>
+              <option value="systemHealth">{{ cowTypes['systemHealth'].title }}</option>
+              <option value="dryOff">{{ cowTypes['dryOff'].title }}</option>
+              <option value="systemHeat">{{ cowTypes['systemHeat'].title }}</option>
+              <option value="distress">{{ cowTypes['distress'].title }}</option>
+              <option value="changeGroup">{{ cowTypes['changeGroup'].title }} </option>
+              <option value="birth">{{ cowTypes['birth'].title }} </option>
+            </select>
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="CowForm__section">
+        <mat-card-header>
+          <mat-card-title>Время</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="Section__content">
+          <mat-form-field appearance="outline">
+            <mat-label>Дата начала</mat-label>
+            <input
+              required
+              formControlName="startDateTime"
+              [matDatepicker]="picker_sdt"
+              matInput
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker_sdt"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker_sdt></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Дата отчета</mat-label>
+            <input
+              required
+              formControlName="reportingDateTime"
+              [matDatepicker]="picker_rdt"
+              matInput
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker_rdt"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker_rdt></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Дата окончания</mat-label>
+            <input
+              required
+              formControlName="endDate"
+              [matDatepicker]="picker_ed"
+              matInput
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker_ed"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker_ed></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Нижняя граница</mat-label>
+            <input
+              required
+              formControlName="minValueDateTime"
+              [matDatepicker]="picker_mvd"
+              matInput
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker_mvd"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker_mvd></mat-datepicker>
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="CowForm__block">
+      <mat-card class="CowForm__section">
+        <mat-card-header>
+          <mat-card-title>Лактация</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="Section__content">
+          <mat-form-field appearance="outline">
+            <mat-label>Лактация (дней)</mat-label>
+            <input formControlName="daysInLactation" type="number" matInput />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Номер лактации</mat-label>
+            <input formControlName="lactationNumber" type="number" matInput />
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="CowForm__control">
+    <!-- <button type="submit" mat-button color="primary" [disabled]="!cowForm.valid">Сохранить</button> -->
+    <button type="submit" mat-button color="primary">Сохранить</button>
+    <button type="button" (click)="cancel()" mat-button>Отмена</button>
+  </div>
+</form>

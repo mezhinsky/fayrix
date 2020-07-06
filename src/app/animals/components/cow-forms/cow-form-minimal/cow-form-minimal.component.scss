@@ -1,0 +1,27 @@
+.CowForm {
+	&__block {
+		display: flex;
+	}
+	&__section {
+		max-width: 300px;
+		margin: 15px;
+	}
+	&__checkbox {
+		padding-bottom: 20px;
+	}
+	&__content {
+		height: 400px;
+		overflow: scroll;
+	}
+	&__control {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
+.Section {
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+}
