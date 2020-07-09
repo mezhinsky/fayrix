@@ -1,10 +1,7 @@
 {
-  "offset": 0,
-  "limit": 100,
-  "total": 16976,
-  "result": [
+  "items": [
     {
-      "healthIndex": 85,
+      "healthIndex": 53,
       "endDate": null,
       "minValueDateTime": 1514844000,
       "type": "systemHealth",
@@ -345,9 +342,12 @@
       "deletable": false,
       "lactationNumber": 5,
       "daysInLactation": 395,
-      "ageInDays": 2688,
-      "startDateTime": 1514746800,
-      "reportingDateTime": 1514784320
+      "ageInDays": 2681,
+      "startDateTime": 1544400000,
+      "reportingDateTime": 1514784000,
+      "healthIndex": null,
+      "endDate": 1594308729000,
+      "minValueDateTime": 1594308729000
     },
     {
       "alertType": "distress",
@@ -1502,6 +1502,38 @@
       "ageInDays": 713,
       "startDateTime": 1514325600,
       "reportingDateTime": 1514389084
+    },
+    {
+      "cowId": 61368,
+      "animalId": 7611,
+      "eventId": 20740,
+      "healthIndex": 24324,
+      "heatIndexPeak": 4234,
+      "endDate": 1595797200000,
+      "minValueDateTime": 1596142800000,
+      "type": "dryOff",
+      "deletable": null,
+      "lactationNumber": 324,
+      "daysInLactation": 234,
+      "ageInDays": 23432,
+      "startDateTime": 1594242000000,
+      "reportingDateTime": 1595451600000
+    },
+    {
+      "cowId": 52448,
+      "animalId": 10813,
+      "eventId": 28225,
+      "healthIndex": null,
+      "heatIndexPeak": null,
+      "endDate": null,
+      "minValueDateTime": null,
+      "type": "dryOff",
+      "deletable": null,
+      "lactationNumber": null,
+      "daysInLactation": null,
+      "ageInDays": null,
+      "startDateTime": null,
+      "reportingDateTime": null
     }
   ]
 }

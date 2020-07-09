@@ -30,6 +30,7 @@ export class CowDialogComponent implements OnInit {
 
   addCow(cow: CowModel): void {
     this.cowsListFacade.addCow(cow)
+    this.dialogRef.close();
   }
 
   updateCow(id: string, cow: CowModel): void {

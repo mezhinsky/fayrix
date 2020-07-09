@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "fake": "json-server --watch ./src/assets/data.json --id cowId"
+    "fake": "json-server --watch ./data.json --id cowId"
   },
   "private": true,
   "dependencies": {

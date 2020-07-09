@@ -12,6 +12,7 @@ export class CowsListFacade {
   items$ = this.store.pipe(select(fromSelectors.getItems));
   ids$ = this.store.pipe(select(fromSelectors.getItemIds));
 
+
   constructor(private store: Store<fromReducers.CowsListState>) {}
 
   LoadItems() {
