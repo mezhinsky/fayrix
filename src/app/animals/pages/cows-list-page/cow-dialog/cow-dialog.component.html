@@ -1,5 +1,5 @@
 <div class="Dialog">
-  <h2 mat-dialog-title>Животное №{{ data?.id }}</h2>
+  <h2 mat-dialog-title>{{ data?.id ? 'Cow №' + data?.id : 'New Record'  }}</h2>
   <mat-dialog-content class="Dialog__content">
     <app-cow-form-minimal
       [item]="item$ | async"

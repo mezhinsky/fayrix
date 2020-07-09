@@ -17,7 +17,6 @@ import { CustomSerializer } from './reducers/router.reducer';
   declarations: [],
   imports: [
     CommonModule,
-    // тут подключаются все редукторы для корневого состояния
     StoreModule.forRoot(reducers),
     !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 50 }) : [],
     EffectsModule.forRoot(effects),

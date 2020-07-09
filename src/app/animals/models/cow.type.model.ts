@@ -1,10 +1,10 @@
  const Types = {
-	systemHealth: { color: 'green', title: 'Здоровье' },
-	dryOff: { color: 'gray', title: 'Сушка' },
-	systemHeat: { color: '#ffd740', title: 'Нагрев' },
-	distress: { color: 'red', title: 'Тревога' },
-	changeGroup: { color: 'blue', title: 'Замена' },
-	birth: { color: 'brown', title: 'Роды' },
+	systemHealth: { color: '#82c382', title: 'System Health' },
+	dryOff: { color: '#cccccc', title: 'Dry Off' },
+	systemHeat: { color: '#ffd740', title: 'system Heat' },
+	distress: { color: '#a90303', title: 'Distress' },
+	changeGroup: { color: '#7878ff', title: 'Change Group' },
+	birth: { color: '#a065ff', title: 'Birth' },
  }
 
  export default Types;

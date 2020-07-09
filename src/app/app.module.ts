@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 
 import { RootStoreModule } from '../app/root-store/root-store.module';
 import { LayoutModule } from './layout/components/layout/layout.module';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LayoutModule } from './layout/components/layout/layout.module';
 
     RootStoreModule,
     LayoutModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

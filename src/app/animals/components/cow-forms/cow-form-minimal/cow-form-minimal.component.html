@@ -3,11 +3,11 @@
     <div class="CowForm__block">
       <mat-card class="CowForm__section Section">
         <mat-card-header>
-          <mat-card-title>Идентификаторы</mat-card-title>
+          <mat-card-title>IDs</mat-card-title>
         </mat-card-header>
         <mat-card-content class="Section__content">
           <mat-form-field appearance="outline">
-            <mat-label>ID коровы</mat-label>
+            <mat-label>Cow ID</mat-label>
             <input
               readonly
               required
@@ -18,7 +18,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>ID животного</mat-label>
+            <mat-label>Animal Id</mat-label>
             <input
               readonly
               required
@@ -29,7 +29,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>ID события</mat-label>
+            <mat-label>Event ID</mat-label>
             <input
               readonly
               required
@@ -43,18 +43,18 @@
 
       <mat-card class="CowForm__section">
         <mat-card-header>
-          <mat-card-title>Параметры</mat-card-title>
+          <mat-card-title>Params</mat-card-title>
         </mat-card-header>
 
         <mat-card-content class="Section__content">
           <section class="CowForm__checkbox">
             <mat-checkbox formControlName="deletable" class="example-margin"
-              >Можно удалить</mat-checkbox
+              >Can be deleted</mat-checkbox
             >
           </section>
 
           <mat-form-field appearance="outline">
-            <mat-label>Возраст</mat-label>
+            <mat-label>Age</mat-label>
             <input
               required
               formControlName="ageInDays"
@@ -64,7 +64,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Индекс здоровья</mat-label>
+            <mat-label>Health Index</mat-label>
             <input
               required
               formControlName="healthIndex"
@@ -74,7 +74,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Пиковая темпиратура</mat-label>
+            <mat-label>Heat Index Peak</mat-label>
             <input
               required
               formControlName="heatIndexPeak"
@@ -84,9 +84,9 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Тип</mat-label>
+            <mat-label>Type</mat-label>
             <select required matNativeControl formControlName="type">
-              <option label="-- выбирите --"></option>
+              <option label="-- pick type --"></option>
               <option value="systemHealth">{{ cowTypes['systemHealth'].title }}</option>
               <option value="dryOff">{{ cowTypes['dryOff'].title }}</option>
               <option value="systemHeat">{{ cowTypes['systemHeat'].title }}</option>
@@ -100,12 +100,12 @@
 
       <mat-card class="CowForm__section">
         <mat-card-header>
-          <mat-card-title>Время</mat-card-title>
+          <mat-card-title>Date</mat-card-title>
         </mat-card-header>
 
         <mat-card-content class="Section__content">
           <mat-form-field appearance="outline">
-            <mat-label>Дата начала</mat-label>
+            <mat-label>Start Date</mat-label>
             <input
               required
               formControlName="startDateTime"
@@ -120,7 +120,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Дата отчета</mat-label>
+            <mat-label>Reporting Date</mat-label>
             <input
               required
               formControlName="reportingDateTime"
@@ -135,7 +135,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Дата окончания</mat-label>
+            <mat-label>End Date</mat-label>
             <input
               required
               formControlName="endDate"
@@ -150,7 +150,7 @@
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Нижняя граница</mat-label>
+            <mat-label>Min Value Date</mat-label>
             <input
               required
               formControlName="minValueDateTime"
@@ -170,17 +170,17 @@
     <div class="CowForm__block">
       <mat-card class="CowForm__section">
         <mat-card-header>
-          <mat-card-title>Лактация</mat-card-title>
+          <mat-card-title>Lactation</mat-card-title>
         </mat-card-header>
 
         <mat-card-content class="Section__content">
           <mat-form-field appearance="outline">
-            <mat-label>Лактация (дней)</mat-label>
+            <mat-label>Lactation (days)</mat-label>
             <input formControlName="daysInLactation" type="number" matInput />
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Номер лактации</mat-label>
+            <mat-label>lactation Number</mat-label>
             <input formControlName="lactationNumber" type="number" matInput />
           </mat-form-field>
         </mat-card-content>
@@ -189,8 +189,8 @@
   </div>
 
   <div class="CowForm__control">
-    <!-- <button type="submit" mat-button color="primary" [disabled]="!cowForm.valid">Сохранить</button> -->
-    <button type="submit" mat-button color="primary">Сохранить</button>
-    <button type="button" (click)="cancel()" mat-button>Отмена</button>
+    <button type="submit" mat-button color="primary" [disabled]="!cowForm.valid">Save</button>
+    <!-- <button type="submit" mat-button color="primary">Сохранить</button> -->
+    <button type="button" (click)="cancel()" mat-button>Cancel</button>
   </div>
 </form>

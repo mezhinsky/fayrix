@@ -339,13 +339,13 @@
       "cowId": 589,
       "animalId": "483",
       "eventId": 34698,
-      "deletable": false,
+      "deletable": true,
       "lactationNumber": 5,
       "daysInLactation": 395,
       "ageInDays": 2681,
       "startDateTime": 1544400000,
       "reportingDateTime": 1514784000,
-      "healthIndex": null,
+      "healthIndex": 23,
       "endDate": 1594308729000,
       "minValueDateTime": 1594308729000
     },
@@ -1483,9 +1483,13 @@
       "deletable": false,
       "lactationNumber": 0,
       "daysInLactation": 676,
-      "ageInDays": 676,
-      "startDateTime": 1514325600,
-      "reportingDateTime": 1514389085
+      "ageInDays": 670,
+      "startDateTime": 1514325000,
+      "reportingDateTime": 1514389000,
+      "healthIndex": 1,
+      "heatIndexPeak": 1,
+      "endDate": 1594316720000,
+      "minValueDateTime": 1594316720000
     },
     {
       "newGroupId": 61,
@@ -1502,38 +1506,6 @@
       "ageInDays": 713,
       "startDateTime": 1514325600,
       "reportingDateTime": 1514389084
-    },
-    {
-      "cowId": 61368,
-      "animalId": 7611,
-      "eventId": 20740,
-      "healthIndex": 24324,
-      "heatIndexPeak": 4234,
-      "endDate": 1595797200000,
-      "minValueDateTime": 1596142800000,
-      "type": "dryOff",
-      "deletable": null,
-      "lactationNumber": 324,
-      "daysInLactation": 234,
-      "ageInDays": 23432,
-      "startDateTime": 1594242000000,
-      "reportingDateTime": 1595451600000
-    },
-    {
-      "cowId": 52448,
-      "animalId": 10813,
-      "eventId": 28225,
-      "healthIndex": null,
-      "heatIndexPeak": null,
-      "endDate": null,
-      "minValueDateTime": null,
-      "type": "dryOff",
-      "deletable": null,
-      "lactationNumber": null,
-      "daysInLactation": null,
-      "ageInDays": null,
-      "startDateTime": null,
-      "reportingDateTime": null
     }
   ]
 }

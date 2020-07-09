@@ -2,12 +2,33 @@
 	border: none;
 }
 
-.age {
-	background-color: gray;
+.id {
+	font-family: monospace;
 }
 
-.age, .type {
+.age {
+	background-color: #ff98b9;
+}
+
+.healthIndex {
+	background-color: #5bd45b;
+}
+
+.heatIndexPeak {
+	background-color: #72bfbc;
+}
+
+.age, .type, .healthIndex, .heatIndexPeak {
 	padding: 5px 10px;
 	border-radius: 50px;
 	color: white;
+}
+
+.container {
+	width: 100%;
+	overflow: scroll;
+}
+
+.cowTable {
+	width: 1700px;
 }

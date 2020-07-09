@@ -149,7 +149,6 @@ export class CowFormMinimalComponent implements OnInit {
     this.fillForm();
   }
 
-  //это все компенсирует отсутствие API для Item
   private genFakeId(): number {
     return Math.floor(Math.random() * 100000)
   }

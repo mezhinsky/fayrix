@@ -93,4 +93,5 @@ export type CowsListActions =
 
   | deleteCowAction
   | deleteCowSuccessAction
-  | deleteCowErrorAction;
+  | deleteCowErrorAction
+    ;

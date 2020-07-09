@@ -10,7 +10,7 @@ import CowTypes from '../../../models/cow.type.model';
   styleUrls: ['./cows-list-minimal.component.scss']
 })
 export class CowsListMinimalComponent implements OnInit {
-  public displayedColumns: string[] = ['animalId', 'ageInDays', 'startDateTime', 'daysInLactation', 'type', 'action'];
+  public displayedColumns: string[] = ['animalId', 'cowId', 'eventId', 'ageInDays', 'healthIndex', 'heatIndexPeak', 'startDateTime', 'reportingDateTime', 'endDate', 'minValueDateTime', 'daysInLactation', 'type', 'action'];
   public cowTypes = CowTypes;
 
   @Input() public items: { [key: string]: CowModel };

@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1594313288482,
+  "timestamp": 1594317526821,
   "index": "https://mezhinsky.github.io/fayrix/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://mezhinsky.github.io/fayrix/4.73b0201618f0d7593adc.js",
+        "https://mezhinsky.github.io/fayrix/4.cde8241f79cd3f1effd4.js",
         "https://mezhinsky.github.io/fayrix/favicon.ico",
         "https://mezhinsky.github.io/fayrix/index.html",
-        "https://mezhinsky.github.io/fayrix/main.b57ab0bd99e38062ede8.js",
+        "https://mezhinsky.github.io/fayrix/main.4121deb8e8d586ecbff4.js",
         "https://mezhinsky.github.io/fayrix/manifest.webmanifest",
         "https://mezhinsky.github.io/fayrix/polyfills.a4021de53358bb0fec14.js",
-        "https://mezhinsky.github.io/fayrix/runtime.feae2c26129d07b005a6.js",
+        "https://mezhinsky.github.io/fayrix/runtime.0d7bb6ddc31d6a9da924.js",
         "https://mezhinsky.github.io/fayrix/styles.3997db369d61b6aadf16.css"
       ],
       "patterns": []
@@ -44,7 +44,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://mezhinsky.github.io/fayrix/4.73b0201618f0d7593adc.js": "81629e690fd553cbb56ed35cbf3f03fdb6b0dc24",
+    "https://mezhinsky.github.io/fayrix/4.cde8241f79cd3f1effd4.js": "f87fac36eb188e96a8a088d4839440e24a584b89",
     "https://mezhinsky.github.io/fayrix/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://mezhinsky.github.io/fayrix/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://mezhinsky.github.io/fayrix/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -54,11 +54,11 @@
     "https://mezhinsky.github.io/fayrix/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://mezhinsky.github.io/fayrix/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://mezhinsky.github.io/fayrix/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://mezhinsky.github.io/fayrix/index.html": "ea65feaa48abdc4998c977583657aaccd71b5100",
-    "https://mezhinsky.github.io/fayrix/main.b57ab0bd99e38062ede8.js": "8f986db44e7e72f4cb6bb6d3398baf79aca6aa94",
+    "https://mezhinsky.github.io/fayrix/index.html": "7065e4896878807cf998b8b3acef67f282839641",
+    "https://mezhinsky.github.io/fayrix/main.4121deb8e8d586ecbff4.js": "e66ba6278fdd314d77786060b7db3b7194ab9f60",
     "https://mezhinsky.github.io/fayrix/manifest.webmanifest": "0bb97fead7eea6afa854ff8b8fe651082b2695f9",
     "https://mezhinsky.github.io/fayrix/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
-    "https://mezhinsky.github.io/fayrix/runtime.feae2c26129d07b005a6.js": "28fd944ecdf053ce047fa77ad3203266dd82bd6a",
+    "https://mezhinsky.github.io/fayrix/runtime.0d7bb6ddc31d6a9da924.js": "323d40dd658cf0217bac943f584d4924da42c7fa",
     "https://mezhinsky.github.io/fayrix/styles.3997db369d61b6aadf16.css": "e337b9de94026ecf1ba526e6042044532af5bb92"
   },
   "navigationUrls": [

@@ -1,5 +1,9 @@
 # Fayrix
 
+## Fake API SERVER
+You can start fake json-server to emulate real server api
+Run `npm fake`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 ## Development server

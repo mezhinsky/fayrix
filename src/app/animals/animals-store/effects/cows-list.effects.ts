@@ -3,18 +3,28 @@ import { AnimalsService } from '../../services/animals-service/animals.service';
 import { Store } from '@ngrx/store';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import * as fromActions from '../actions/cows-list.actions';
-import { catchError, map, switchMap } from 'rxjs/operators';
+import { catchError, map, switchMap, tap } from 'rxjs/operators';
 import { of } from 'rxjs';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 import { CowsListResponse } from '../../models/cows.response.model';
+
 
 @Injectable()
 export class CowsListEffects {
   constructor(
     private AnimalsService: AnimalsService,
     private store$: Store<any>,
-    private actions$: Actions
+    private actions$: Actions,
+    private _snackBar: MatSnackBar,
   ) {}
+
+
+  openSnackBar(action: string) {
+    this._snackBar.open('Success', action, {
+      duration: 2000,
+    });
+  }
 
   @Effect()
   loadCowsList$ = this.actions$.pipe(
@@ -75,4 +85,30 @@ export class CowsListEffects {
       );
     })
   );
+
+
+  @Effect({ dispatch: false })
+  deleteMessage$ = this.actions$.pipe(
+    ofType<fromActions.deleteCowSuccessAction>(fromActions.DELETE_COW_SUCCESS),
+    tap((action) => {
+      this.openSnackBar('Record Deleted');
+    })
+  );
+
+  @Effect({ dispatch: false })
+  updateMessage$ = this.actions$.pipe(
+    ofType<fromActions.updateCowSuccessAction>(fromActions.UPDATE_COW_SUCCESS),
+    tap((action) => {
+      this.openSnackBar('Record Updated');
+    })
+  );
+
+  @Effect({ dispatch: false })
+  addMessage$ = this.actions$.pipe(
+    ofType<fromActions.AddCowSuccessAction>(fromActions.ADD_COW_SUCCESS),
+    tap((action) => {
+      this.openSnackBar('Record Added');
+    })
+  );
+
 }
