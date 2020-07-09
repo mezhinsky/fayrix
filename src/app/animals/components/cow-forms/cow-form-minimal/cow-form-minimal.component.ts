@@ -184,10 +184,10 @@ export class CowFormMinimalComponent implements OnInit {
     let minValueDateTime: AbstractControl & Moment = form.get('minValueDateTime').value
 
     form.patchValue({
-      startDateTime: startDateTime ? startDateTime.unix() : null,
-      reportingDateTime: reportingDateTime ? reportingDateTime.unix(): null,
-      endDate: endDate ? endDate.unix() : null,
-      minValueDateTime: minValueDateTime?  minValueDateTime.unix(): null,
+      startDateTime: startDateTime ? startDateTime.unix() * 1000 : null,
+      reportingDateTime: reportingDateTime ? reportingDateTime.unix() * 1000 : null,
+      endDate: endDate ? endDate.unix() * 1000 : null,
+      minValueDateTime: minValueDateTime?  minValueDateTime.unix() * 1000 : null,
     })
 
     this.onChange.emit(form.value);

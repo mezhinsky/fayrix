@@ -1,10 +1,7 @@
 {
-  "offset": 0,
-  "limit": 100,
-  "total": 16976,
   "result": [
     {
-      "healthIndex": 85,
+      "healthIndex": 53,
       "endDate": null,
       "minValueDateTime": 1514844000,
       "type": "systemHealth",

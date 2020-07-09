@@ -34,6 +34,7 @@ export class CowDialogComponent implements OnInit {
 
   updateCow(id: string, cow: CowModel): void {
     this.cowsListFacade.updateCow(id, cow)
+    this.dialogRef.close();
   }
 
   deleteCow(id: string): void {
